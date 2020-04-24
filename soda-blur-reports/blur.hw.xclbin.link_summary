@@ -1,0 +1,823 @@
+<ENTRY>
+{
+ "session": {
+  "name": "v++_link_blur.hw",
+  "pid": "0",
+  "uuid": "ef7bc5ff-c838-4809-aebc-bb3443f3e118",
+  "description": "",
+  "timestamp": "0",
+  "outputFiles": [
+   {
+    "type": "JSON",
+    "mode": "CLIENT_ONLY",
+    "path": "/home/centos/soda-compiler/blur.temp/.tlog/v++_link_blur.hw.xtl",
+    "continuous": true
+   },
+   {
+    "type": "JSON",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/home/centos/soda-compiler/blur.hw.xclbin.link_summary",
+    "continuous": true
+   },
+   {
+    "type": "BINARY_PROTOBUF",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/home/centos/soda-compiler/blur.hw.xclbin.link_summary.pb",
+    "continuous": true
+   }
+  ]
+ },
+ "thisFile": "/home/centos/soda-compiler/blur.hw.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Apr 14 04:54:00 2020",
+ "timestampMillis": "1586840040595",
+ "buildStep": {
+  "cmdId": "09e37666-b185-4c86-aedc-6d3d2e7b8ead",
+  "name": "v++",
+  "logFile": "/home/centos/soda-compiler/blur.temp/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ --xp param:compiler.lockFlowCritSlackThreshold=0 --xp vivado_param:hd.routingContainmentAreaExpansion=true --xp vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1 --xp vivado_param:bitstream.enablePR=4123 --xp vivado_param:physynth.ultraRAMOptOutput=false --xp vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1} --xp vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp vivado_param:project.writeIntermediateCheckpoints=1 --xp \"misc:report=type report_utilization name synth_report_utilization_summary steps {synth_design} runs {__KERNEL__} options {}\" --xp \"misc:report=type report_utilization name impl_report_utilization_init_design_summary steps {init_design} runs {impl_1} options {}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_init_design_summary steps {init_design} runs {impl_1} options {-max_paths 10}\" --xp \"param:compiler.reportFailfast=pre_opt_design {__KERNEL_NAMES__} post_opt_design {__OCL_TOP__} post_route_design {__SLR__}\" --xp \"misc:report=type report_io name impl_report_io_place_design_summary steps {place_design} runs {impl_1} options {}\" --xp \"misc:report=type report_utilization name impl_report_utilization_place_design_summary steps {place_design} runs {impl_1} options {}\" --xp \"misc:report=type report_control_sets name impl_report_control_sets_place_design_summary steps {place_design} runs {impl_1} options {-verbose}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_place_design_summary steps {place_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_drc name impl_report_drc_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_methodology name impl_report_methodology_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_power name impl_report_power_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_route_status name impl_report_route_status_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_clock_utilization name impl_report_clock_utilization_route_design_summary steps {route_design} runs {impl_1} options {}\" --xp \"misc:report=type report_bus_skew name impl_report_bus_skew_route_design_summary steps {route_design} runs {impl_1} options {-warn_on_violation}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw -f /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm -l blur.hw.xo -o blur.hw.xclbin --report_dir blur.rpt --log_dir blur.log --temp_dir blur.temp --report_level 2 --save-temps ",
+  "args": [
+   "--xp",
+   "param:compiler.lockFlowCritSlackThreshold=0",
+   "--xp",
+   "vivado_param:hd.routingContainmentAreaExpansion=true",
+   "--xp",
+   "vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1",
+   "--xp",
+   "vivado_param:bitstream.enablePR=4123",
+   "--xp",
+   "vivado_param:physynth.ultraRAMOptOutput=false",
+   "--xp",
+   "vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}",
+   "--xp",
+   "vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}",
+   "-t",
+   "hw",
+   "-f",
+   "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm",
+   "-l",
+   "blur.hw.xo",
+   "-o",
+   "blur.hw.xclbin",
+   "--report_dir",
+   "blur.rpt",
+   "--log_dir",
+   "blur.log",
+   "--temp_dir",
+   "blur.temp",
+   "--report_level",
+   "2",
+   "--save-temps"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:00 2020",
+ "timestampMillis": "1586840040596",
+ "status": {
+  "cmdId": "09e37666-b185-4c86-aedc-6d3d2e7b8ead",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Apr 14 04:54:05 2020",
+ "timestampMillis": "1586840045305",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "blur.hw",
+    "file": "/home/centos/soda-compiler/blur.hw.xclbin",
+    "reports": []
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "blur_kernel",
+     "file": "/home/centos/soda-compiler/blur.hw.xo",
+     "reports": []
+    },
+    "sources": [
+     "/home/centos/soda-compiler/blur.temp/link/int/xo/blur_kernel/blur_kernel/cpu_sources/dataflow_kernel.cpp"
+    ],
+    "cuNames": [
+     "blur_kernel_1"
+    ]
+   }
+  ]
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 04:54:05 2020",
+ "timestampMillis": "1586840045355",
+ "buildStep": {
+  "cmdId": "06e76742-8445-4340-8eb1-9cf7a9821deb",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/centos/soda-compiler/blur.hw.xo -keep --xpfm /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm --target hw --output_dir /home/centos/soda-compiler/blur.temp/link/int --temp_dir /home/centos/soda-compiler/blur.temp/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/centos/soda-compiler/blur.hw.xo",
+   "-keep",
+   "--xpfm",
+   "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/centos/soda-compiler/blur.temp/link/int",
+   "--temp_dir",
+   "/home/centos/soda-compiler/blur.temp/link/sys_link"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:05 2020",
+ "timestampMillis": "1586840045355",
+ "status": {
+  "cmdId": "06e76742-8445-4340-8eb1-9cf7a9821deb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:13 2020",
+ "timestampMillis": "1586840053676",
+ "status": {
+  "cmdId": "06e76742-8445-4340-8eb1-9cf7a9821deb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 04:54:13 2020",
+ "timestampMillis": "1586840053677",
+ "buildStep": {
+  "cmdId": "6f1fa8af-d9ee-453b-b123-f8ac73142710",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/centos/soda-compiler/blur.temp/link/int/sdsl.dat -rtd /home/centos/soda-compiler/blur.temp/link/int/cf2sw.rtd -xclbin /home/centos/soda-compiler/blur.temp/link/int/xclbin_orig.xml -o /home/centos/soda-compiler/blur.temp/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/centos/soda-compiler/blur.temp/link/int/sdsl.dat",
+   "-rtd",
+   "/home/centos/soda-compiler/blur.temp/link/int/cf2sw.rtd",
+   "-xclbin",
+   "/home/centos/soda-compiler/blur.temp/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/centos/soda-compiler/blur.temp/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:13 2020",
+ "timestampMillis": "1586840053678",
+ "status": {
+  "cmdId": "6f1fa8af-d9ee-453b-b123-f8ac73142710",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:14 2020",
+ "timestampMillis": "1586840054218",
+ "status": {
+  "cmdId": "6f1fa8af-d9ee-453b-b123-f8ac73142710",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 04:54:14 2020",
+ "timestampMillis": "1586840054219",
+ "buildStep": {
+  "cmdId": "09d744f8-d468-40de-ae64-0f744cc6e0aa",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram --rtdJsonFileName /home/centos/soda-compiler/blur.temp/link/int/cf2sw.rtd --diagramJsonFileName /home/centos/soda-compiler/blur.temp/link/int/systemDiagramModel.json --platformFilePath /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm --generatedByName v++ --generatedByVersion 2019.2 --generatedByChangeList 2700185 --generatedByTimeStamp Thu Oct 24 18:45:48 MDT 2019 --generatedByOptions /opt/Xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw -f /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm -l blur.hw.xo -o blur.hw.xclbin --report_dir blur.rpt --log_dir blur.log --temp_dir blur.temp --report_level 2 --save-temps  --generatedByXclbinName blur.hw --kernelInfoDataFileName /home/centos/soda-compiler/blur.temp/link/int/kernel_info.dat",
+  "args": [
+   "--rtdJsonFileName",
+   "/home/centos/soda-compiler/blur.temp/link/int/cf2sw.rtd",
+   "--diagramJsonFileName",
+   "/home/centos/soda-compiler/blur.temp/link/int/systemDiagramModel.json",
+   "--platformFilePath",
+   "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm",
+   "--generatedByName",
+   "v++",
+   "--generatedByVersion",
+   "2019.2",
+   "--generatedByChangeList",
+   "2700185",
+   "--generatedByTimeStamp",
+   "Thu Oct 24 18:45:48 MDT 2019",
+   "--generatedByOptions",
+   "/opt/Xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw -f /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm -l blur.hw.xo -o blur.hw.xclbin --report_dir blur.rpt --log_dir blur.log --temp_dir blur.temp --report_level 2 --save-temps ",
+   "--generatedByXclbinName",
+   "blur.hw",
+   "--kernelInfoDataFileName",
+   "/home/centos/soda-compiler/blur.temp/link/int/kernel_info.dat"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:14 2020",
+ "timestampMillis": "1586840054220",
+ "status": {
+  "cmdId": "09d744f8-d468-40de-ae64-0f744cc6e0aa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 04:54:15 2020",
+ "timestampMillis": "1586840055682",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.temp/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:15 2020",
+ "timestampMillis": "1586840055688",
+ "status": {
+  "cmdId": "09d744f8-d468-40de-ae64-0f744cc6e0aa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 04:54:15 2020",
+ "timestampMillis": "1586840055688",
+ "buildStep": {
+  "cmdId": "41270868-d5f6-4848-ac9d-322e38630aa7",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm -s --output_dir /home/centos/soda-compiler/blur.temp/link/int --log_dir /home/centos/soda-compiler/blur.log/link --report_dir /home/centos/soda-compiler/blur.rpt/link --config /home/centos/soda-compiler/blur.temp/link/int/vplConfig.ini -k /home/centos/soda-compiler/blur.temp/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/centos/soda-compiler/blur.temp/link --no-info --tlog_dir /home/centos/soda-compiler/blur.temp/.tlog/v++_link_blur.hw --iprepo /home/centos/soda-compiler/blur.temp/link/int/xo/ip_repo/xilinx_com_RTLKernel_blur_kernel_1_0 --messageDb /home/centos/soda-compiler/blur.temp/link/run_link/vpl.pb /home/centos/soda-compiler/blur.temp/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm",
+   "-s",
+   "--output_dir",
+   "/home/centos/soda-compiler/blur.temp/link/int",
+   "--log_dir",
+   "/home/centos/soda-compiler/blur.log/link",
+   "--report_dir",
+   "/home/centos/soda-compiler/blur.rpt/link",
+   "--config",
+   "/home/centos/soda-compiler/blur.temp/link/int/vplConfig.ini",
+   "-k",
+   "/home/centos/soda-compiler/blur.temp/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/centos/soda-compiler/blur.temp/link",
+   "--no-info",
+   "--tlog_dir",
+   "/home/centos/soda-compiler/blur.temp/.tlog/v++_link_blur.hw",
+   "--iprepo",
+   "/home/centos/soda-compiler/blur.temp/link/int/xo/ip_repo/xilinx_com_RTLKernel_blur_kernel_1_0",
+   "--messageDb",
+   "/home/centos/soda-compiler/blur.temp/link/run_link/vpl.pb",
+   "/home/centos/soda-compiler/blur.temp/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:15 2020",
+ "timestampMillis": "1586840055689",
+ "status": {
+  "cmdId": "41270868-d5f6-4848-ac9d-322e38630aa7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Apr 14 04:54:17 2020",
+ "timestampMillis": "1586840057086",
+ "buildStep": {
+  "cmdId": "afed6edf-a494-47de-8db9-018f9cd9e669",
+  "name": "vpl",
+  "logFile": "/home/centos/soda-compiler/blur.temp/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/vpl -t hw -f /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_1/xilinx_aws-vu9p-f1_shell-v04261818_201920_1.xpfm -s --output_dir /home/centos/soda-compiler/blur.temp/link/int --log_dir /home/centos/soda-compiler/blur.log/link --report_dir /home/centos/soda-compiler/blur.rpt/link --config /home/centos/soda-compiler/blur.temp/link/int/vplConfig.ini -k /home/centos/soda-compiler/blur.temp/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/centos/soda-compiler/blur.temp/link --no-info --tlog_dir /home/centos/soda-compiler/blur.temp/.tlog/v++_link_blur.hw --iprepo /home/centos/soda-compiler/blur.temp/link/int/xo/ip_repo/xilinx_com_RTLKernel_blur_kernel_1_0 --messageDb /home/centos/soda-compiler/blur.temp/link/run_link/vpl.pb /home/centos/soda-compiler/blur.temp/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:17 2020",
+ "timestampMillis": "1586840057087",
+ "status": {
+  "cmdId": "afed6edf-a494-47de-8db9-018f9cd9e669",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 04:54:21 2020",
+ "timestampMillis": "1586840061258",
+ "buildStep": {
+  "cmdId": "7a7394f4-6472-4032-9130-12e7dca8e11e",
+  "name": "vivado",
+  "logFile": "/home/centos/soda-compiler/blur.temp/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 04:54:21 2020",
+ "timestampMillis": "1586840061259",
+ "status": {
+  "cmdId": "7a7394f4-6472-4032-9130-12e7dca8e11e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511202",
+ "status": {
+  "cmdId": "7a7394f4-6472-4032-9130-12e7dca8e11e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511239",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.rpt/link/imp/init_report_utilization_0.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511246",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.rpt/link/imp/xilinx_aws-vu9p-f1_shell-v04261818_201920_1_bb_locked_timing_summary_init.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511254",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.rpt/link/imp/xilinx_aws-vu9p-f1_shell-v04261818_201920_1_bb_locked_timing_summary_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511261",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.rpt/link/imp/xilinx_aws-vu9p-f1_shell-v04261818_201920_1_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511398",
+ "status": {
+  "cmdId": "afed6edf-a494-47de-8db9-018f9cd9e669",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511407",
+ "status": {
+  "cmdId": "41270868-d5f6-4848-ac9d-322e38630aa7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511408",
+ "buildStep": {
+  "cmdId": "1dba3fca-85fb-4ecc-aa8b-a99b747bddea",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511408",
+ "status": {
+  "cmdId": "1dba3fca-85fb-4ecc-aa8b-a99b747bddea",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511411",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.temp/link/int/blur.hw_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511412",
+ "buildStep": {
+  "cmdId": "3d3f67e8-57e4-4929-9ef3-7b37af467701",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/centos/soda-compiler/blur.temp/link/int/address_map.xml -sdsl /home/centos/soda-compiler/blur.temp/link/int/sdsl.dat -xclbin /home/centos/soda-compiler/blur.temp/link/int/xclbin_orig.xml -rtd /home/centos/soda-compiler/blur.temp/link/int/blur.hw.rtd -o /home/centos/soda-compiler/blur.temp/link/int/blur.hw.xml",
+  "args": [
+   "-a",
+   "/home/centos/soda-compiler/blur.temp/link/int/address_map.xml",
+   "-sdsl",
+   "/home/centos/soda-compiler/blur.temp/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/centos/soda-compiler/blur.temp/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/centos/soda-compiler/blur.temp/link/int/blur.hw.rtd",
+   "-o",
+   "/home/centos/soda-compiler/blur.temp/link/int/blur.hw.xml"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511412",
+ "status": {
+  "cmdId": "3d3f67e8-57e4-4929-9ef3-7b37af467701",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511960",
+ "status": {
+  "cmdId": "3d3f67e8-57e4-4929-9ef3-7b37af467701",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511960",
+ "buildStep": {
+  "cmdId": "5afc6a64-9450-427a-b3da-8cb79e4c5f82",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram --rtdJsonFileName /home/centos/soda-compiler/blur.temp/link/int/blur.hw.rtd --diagramJsonFileName /home/centos/soda-compiler/blur.temp/link/int/systemDiagramModel.json --diagramWithAddressesAndSlrsJsonFileName /home/centos/soda-compiler/blur.temp/link/int/systemDiagramModelSlrBaseAddress.json",
+  "args": [
+   "--rtdJsonFileName",
+   "/home/centos/soda-compiler/blur.temp/link/int/blur.hw.rtd",
+   "--diagramJsonFileName",
+   "/home/centos/soda-compiler/blur.temp/link/int/systemDiagramModel.json",
+   "--diagramWithAddressesAndSlrsJsonFileName",
+   "/home/centos/soda-compiler/blur.temp/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:51 2020",
+ "timestampMillis": "1586846511961",
+ "status": {
+  "cmdId": "5afc6a64-9450-427a-b3da-8cb79e4c5f82",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513255",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.temp/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513261",
+ "status": {
+  "cmdId": "5afc6a64-9450-427a-b3da-8cb79e4c5f82",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513262",
+ "status": {
+  "cmdId": "1dba3fca-85fb-4ecc-aa8b-a99b747bddea",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513263",
+ "buildStep": {
+  "cmdId": "580dd171-63ae-451d-81e2-92d8db523650",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/centos/soda-compiler/blur.temp/link/int/routed.dcp --force --key-value SYS:mode:hw_pr --add-section :JSON:/home/centos/soda-compiler/blur.temp/link/int/blur.hw.rtd --append-section :JSON:/home/centos/soda-compiler/blur.temp/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/soda-compiler/blur.temp/link/int/blur.hw_xml.rtd --add-section BUILD_METADATA:JSON:/home/centos/soda-compiler/blur.temp/link/int/blur.hw_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/centos/soda-compiler/blur.temp/link/int/blur.hw.xml --add-section SYSTEM_METADATA:RAW:/home/centos/soda-compiler/blur.temp/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_aws-vu9p-f1_shell-v04261818_201920_1 --output /home/centos/soda-compiler/blur.temp/link/int/blur.hw.xcp",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/centos/soda-compiler/blur.temp/link/int/routed.dcp",
+   "--force",
+   "--key-value",
+   "SYS:mode:hw_pr",
+   "--add-section",
+   ":JSON:/home/centos/soda-compiler/blur.temp/link/int/blur.hw.rtd",
+   "--append-section",
+   ":JSON:/home/centos/soda-compiler/blur.temp/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/centos/soda-compiler/blur.temp/link/int/blur.hw_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/centos/soda-compiler/blur.temp/link/int/blur.hw_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/centos/soda-compiler/blur.temp/link/int/blur.hw.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/centos/soda-compiler/blur.temp/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_aws-vu9p-f1_shell-v04261818_201920_1",
+   "--output",
+   "/home/centos/soda-compiler/blur.temp/link/int/blur.hw.xcp"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513264",
+ "status": {
+  "cmdId": "580dd171-63ae-451d-81e2-92d8db523650",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513457",
+ "status": {
+  "cmdId": "580dd171-63ae-451d-81e2-92d8db523650",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513458",
+ "buildStep": {
+  "cmdId": "85bebdb9-a281-4428-93d2-131a4a5a8154",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --info /home/centos/soda-compiler/blur.temp/link/int/blur.hw.xclbin.info --input /home/centos/soda-compiler/blur.temp/link/int/blur.hw.xcp",
+  "args": [
+   "--quiet",
+   "--info",
+   "/home/centos/soda-compiler/blur.temp/link/int/blur.hw.xclbin.info",
+   "--input",
+   "/home/centos/soda-compiler/blur.temp/link/int/blur.hw.xcp"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:53 2020",
+ "timestampMillis": "1586846513458",
+ "status": {
+  "cmdId": "85bebdb9-a281-4428-93d2-131a4a5a8154",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:54 2020",
+ "timestampMillis": "1586846514820",
+ "status": {
+  "cmdId": "85bebdb9-a281-4428-93d2-131a4a5a8154",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:54 2020",
+ "timestampMillis": "1586846514821",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.rpt/link/system_estimate_blur.hw.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:54 2020",
+ "timestampMillis": "1586846514863",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.rpt/link/v++_link_blur.hw_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:54 2020",
+ "timestampMillis": "1586846514863",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.temp/v++_link_blur.hw_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Apr 14 06:41:54 2020",
+ "timestampMillis": "1586846514907",
+ "report": {
+  "path": "/home/centos/soda-compiler/blur.log/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Apr 14 06:41:54 2020",
+ "timestampMillis": "1586846514907",
+ "status": {
+  "cmdId": "09e37666-b185-4c86-aedc-6d3d2e7b8ead",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
