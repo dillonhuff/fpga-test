@@ -1,0 +1,75 @@
+===============================================================================
+Version:    v++ v2019.2 (64-bit)
+Build:      SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Tue Apr 28 20:43:18 2020
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             bxy_ur_1_opt_kernel
+Target Device:           xilinx:aws-vu9p-f1:shell-v04261818:201920.1
+Target Clock:            250.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name          Type  Target              OpenCL Library       Compute Units
+-------------------  ----  ------------------  -------------------  -------------
+bxy_ur_1_opt_kernel  c     fpga0:OCL_REGION_0  bxy_ur_1_opt_kernel  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     bxy_ur_1_opt_kernel
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit           Kernel Name          Module Name          Target Frequency  Estimated Frequency
+---------------------  -------------------  -------------------  ----------------  -------------------
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  BurstRead5           250               342.465759
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module0Func          250               685.871094
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module1Func65        250               685.871094
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module2Func          250               382.263
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module3Func          250               382.263
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module4Func66        250               375.798584
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module1Func          250               685.871094
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module5Func          250               685.871094
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module6Func          250               685.871094
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module4Func          250               375.798584
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module7Func          250               685.871094
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  BurstWrite           250               342.465759
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  bxy_ur_1_opt_kernel  250               342.465759
+
+Latency Information
+Compute Unit           Kernel Name          Module Name          Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+---------------------  -------------------  -------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  BurstRead5           undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module0Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module1Func65        undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module2Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module3Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module4Func66        undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module1Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module5Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module6Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module4Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module7Func          undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  BurstWrite           undef           undef          undef         undef           undef            undef           undef
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  bxy_ur_1_opt_kernel  undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit           Kernel Name          Module Name          FF    LUT   DSP  BRAM  URAM
+---------------------  -------------------  -------------------  ----  ----  ---  ----  ----
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  BurstRead5           162   290   0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module0Func          25    88    0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module1Func65        25    97    0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module2Func          20    147   0    2     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module3Func          19    129   0    2     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module4Func66        288   281   1    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module1Func          25    97    0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module5Func          41    97    0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module6Func          40    79    0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module4Func          288   281   1    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  Module7Func          24    79    0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  BurstWrite           253   251   0    0     0
+bxy_ur_1_opt_kernel_1  bxy_ur_1_opt_kernel  bxy_ur_1_opt_kernel  3202  4422  2    31    0
+-------------------------------------------------------------------------------
